@@ -1,0 +1,6 @@
+now = int(input())
+seqL = 0
+while now != 0:
+    seqL = seqL + 1
+    now = int(input())
+print(seqL)
