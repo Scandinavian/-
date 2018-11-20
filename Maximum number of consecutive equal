@@ -1,0 +1,14 @@
+pr = -1
+cur = 0
+maxnum = 0
+el = int(input())
+while el != 0:
+    if pr == el:
+        cur += 1
+    else:
+        pr = el
+        maxnum = max(maxnum, cur)
+        cur = 1
+    el = int(input())
+maxnum = max(maxnum, cur)
+print(maxnum)
