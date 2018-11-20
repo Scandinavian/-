@@ -1,0 +1,11 @@
+now = int(input())
+seqL = 0
+seqSum = 0
+while now != 0:
+    seqSum = seqSum + now
+    seqL = seqL + 1
+    now = int(input())
+a = seqSum
+b = seqL
+c = float(a // b)
+print(c)
