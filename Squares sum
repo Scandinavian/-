@@ -1,0 +1,7 @@
+n = int(input())
+i = 1
+seqSum = 0
+while i <= n:
+    seqSum = seqSum + (i ** 2)
+    i = i + 1
+print(seqSum)
