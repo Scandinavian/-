@@ -1,0 +1,9 @@
+inFile = open('input.txt', 'r', encoding='utf8')
+outFile = open('output.txt', 'w', encoding='utf8')
+spisok = inFile.readlines()
+spisok.sort()
+for i in spisok:
+    i = i.split()
+    outFile.write('{} {} {}'.format(*(i[:2]), i[-1]) + '\n')
+inFile.close()
+outFile.close()
