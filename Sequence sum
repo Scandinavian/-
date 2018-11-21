@@ -1,6 +1,19 @@
+#first method
+
 now = int(input())
 seqSum = 0
 while now != 0:
     seqSum = seqSum + now
     now = int(input())
 print(seqSum)
+
+# second method
+
+def seqSum():
+    n = int(input())
+    if n == 0:
+        return 0
+    return n + seqSum()
+
+
+print(seqSum())
